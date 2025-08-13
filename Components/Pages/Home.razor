@@ -17,16 +17,7 @@ Welcome to your new app.
 
 @code{
 
-    private void TestDispatch() 
-    {
-        try
-        {
-            FluxorDispatcher.Dispatch(new MyAction());
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error dispatching action: {ex.Message}");
-        }
-    }
+    private void TestDispatch() =>
+        FluxorDispatcher.Dispatch(new MyAction());
 
 }
